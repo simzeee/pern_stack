@@ -1,7 +1,7 @@
 {
   "name": "raw_react",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.{js,jsx,css,html}\"",
@@ -15,16 +15,26 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^9.9.1",
+    "@eslint/js": "^9.17.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "^7.37.1",
-    "globals": "^15.9.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
     "prettier": "^3.5.3",
-    "vite": "^5.4.2"
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.17",
+    "@tailwindcss/vite": "^4.0.17",
+    "vite": "^6.0.5"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.3"
   }
 }
