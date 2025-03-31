@@ -1,9 +1,8 @@
 import Pizza from "./Pizza";
-import { createRoot } from "react-dom/client";
 
 const App = () => {
   return (
-    <div>
+    <div className="text-green-600">
       <h1>Padre Gino's Pizza – Order Now</h1>
       <Pizza name="Pepperoni" description="Mozzarella Cheese, Pepperoni" />
       <Pizza
@@ -18,6 +17,4 @@ const App = () => {
   );
 };
 
-const container = document.getElementById("root");
-const root = createRoot(container);
-root.render(<App />);
+export default App;
