@@ -1,10 +1,16 @@
+import dotenv from "dotenv";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: __dirname + "/../.env" });
+
 import { Sequelize } from "sequelize";
 
-// Replace the following with your actual database credentials
 const sequelize = new Sequelize(
-  process.env.DATABASE,
-  process.env.USER,
-  process.env.PASSWORD,
+  process.env.DB_DATABASE,
+  process.env.DB_USER,
+  process.env.DB_PASSWORD,
   {
     host: process.env.HOST,
     dialect: "postgres",
